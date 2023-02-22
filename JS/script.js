@@ -81,7 +81,7 @@ else {
     
     prezzoBiglietto = prezzoBiglietto.toFixed(2)
 
-    document.writeln("Il tuo biglietto costa" + prezzoBiglietto + "€")
+    document.writeln("Il tuo biglietto costa " + prezzoBiglietto + " €")
 }
 
 
