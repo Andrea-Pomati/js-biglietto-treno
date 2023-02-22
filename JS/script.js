@@ -40,26 +40,28 @@ let etàPasseggero = parseInt (prompt  ("Quanti anni hai?"))
 let prezzoBiglietto = prezzoKm * kmDaPercorrere
 
 
-// sconto biglietto under 18
+// sconto biglietto under 18 20%
 
 let scontoBiglietto18 = (prezzoBiglietto * 0,2)
 
+//calcolo degli sconti
 
-// sconto biglietto over 65
+const prezzoUnder18 = prezzoBiglietto - scontoBiglietto18
+
+// sconto biglietto over 65 40%
 
 let scontoBiglietto65 = (prezzoBiglietto * 0,4)
 
 //calcolo degli sconti
 
-const prezzounder18 = prezzoBiglietto - scontoBiglietto18
 
-const prezzoover65 = prezzoBiglietto - scontoBiglietto65
+const prezzoOver65 = prezzoBiglietto - scontoBiglietto65
 
 
 
 if (etàPasseggero <= 18) {
 
-    prezzoBiglietto = prezzounder18.toFixed(2)
+    prezzoBiglietto = prezzoUnder18.toFixed(2)
     
     document.writeln("Il tuo biglietto costa" + prezzoBiglietto + "€")
 
@@ -69,7 +71,7 @@ if (etàPasseggero <= 18) {
 
 else if (etàPasseggero >= 65) {
 
-    prezzoBiglietto = prezzoover65.toFixed(2)
+    prezzoBiglietto = prezzoOver65.toFixed(2)
 
     document.writeln("Il tuo biglietto costa" + prezzoBiglietto + "€")
 
@@ -78,7 +80,7 @@ else if (etàPasseggero >= 65) {
 else {
     
     prezzoBiglietto = prezzoBiglietto.toFixed(2)
-    
+
     document.writeln("Il tuo biglietto costa" + prezzoBiglietto + "€")
 }
 
