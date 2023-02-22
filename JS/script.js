@@ -42,7 +42,7 @@ let prezzoBiglietto = prezzoKm * kmDaPercorrere
 
 // sconto biglietto under 18 20%
 
-let scontoBiglietto18 = (prezzoBiglietto * 0,2)
+let scontoBiglietto18 = prezzoBiglietto * 0.2
 
 //calcolo degli sconti
 
@@ -50,7 +50,7 @@ const prezzoUnder18 = prezzoBiglietto - scontoBiglietto18
 
 // sconto biglietto over 65 40%
 
-let scontoBiglietto65 = (prezzoBiglietto * 0,4)
+let scontoBiglietto65 = prezzoBiglietto * 0.4
 
 //calcolo degli sconti
 
