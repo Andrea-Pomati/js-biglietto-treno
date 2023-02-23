@@ -59,11 +59,11 @@ const prezzoOver65 = prezzoBiglietto - scontoBiglietto65
 
 
 
-if (etàPasseggero <= 18) {
+if (etàPasseggero < 18) {
 
     prezzoBiglietto = prezzoUnder18.toFixed(2)
     
-    document.writeln("Il tuo biglietto costa" + prezzoBiglietto + "€")
+    document.writeln(`Il tuo biglietto costa ${prezzoBiglietto} €`);
 
 
 }
@@ -73,7 +73,7 @@ else if (etàPasseggero >= 65) {
 
     prezzoBiglietto = prezzoOver65.toFixed(2)
 
-    document.writeln("Il tuo biglietto costa" + prezzoBiglietto + "€")
+    document.writeln(`Il tuo biglietto costa ${prezzoBiglietto} €`);
 
 }
 
@@ -81,8 +81,9 @@ else {
     
     prezzoBiglietto = prezzoBiglietto.toFixed(2)
 
-    document.writeln("Il tuo biglietto costa " + prezzoBiglietto + " €")
+    document.writeln(`Il tuo biglietto costa ${prezzoBiglietto} €`);
 }
+
 
 
 
